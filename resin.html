@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIRI' NA PACCE DIGITAL: PROTOKOL PERLAWANAN</title>
+    <style>
+        body { background-color: #050505; color: #fff; font-family: 'Courier New', monospace; margin: 0; padding: 0; text-align: center; line-height: 1.8; }
+        .container { max-width: 800px; margin: 50px auto; padding: 40px; border: 2px solid #cf2e2e; box-shadow: 0 0 40px rgba(207, 46, 46, 0.3); background: rgba(10, 0, 0, 0.95); }
+        .header { margin-bottom: 40px; }
+        .mask-img { max-width: 150px; border: 5px solid #cf2e2e; border-radius: 50%; padding: 10px; background: black; }
+        h1 { color: #cf2e2e; letter-spacing: 5px; text-transform: uppercase; font-size: 2.8rem; text-shadow: 2px 2px 0 #000; animation: glitch 1.5s infinite; }
+        .subtitle { color: #888; font-weight: bold; border-bottom: 1px solid #cf2e2e; padding-bottom: 10px; margin-bottom: 30px; }
+        .quote-box { margin: 40px 0; padding: 25px; border: 1px dashed #cf2e2e; background: #111; }
+        .quote-text { font-size: 1.5rem; font-style: italic; color: #fff; }
+        .quote-author { display: block; margin-top: 15px; color: #cf2e2e; font-weight: bold; font-size: 1.1rem; }
+        .manifesto { text-align: justify; padding: 0 10px; font-size: 1.1rem; }
+        .highlight { background-color: #cf2e2e; color: #fff; padding: 2px 5px; }
+        .link-pppk { display: inline-block; background-color: #cf2e2e; color: #fff; text-decoration: none; padding: 15px 30px; margin-top: 40px; font-weight: bold; font-size: 1.1rem; border: 2px solid transparent; transition: all 0.3s; }
+        .link-pppk:hover { background-color: #000; color: #cf2e2e; border: 2px solid #cf2e2e; transform: scale(1.05); }
+        .footer { text-align: center; margin-top: 60px; font-size: 0.8rem; border-top: 1px solid #333; padding-top: 25px; color: #666; }
+        .host-id { color: #cf2e2e; font-weight: bold; font-size: 1.1rem; text-transform: uppercase; }
+        @keyframes glitch { 0%, 100% { transform: translate(0) } 20% { transform: translate(-2px, 2px) } 40% { transform: translate(-2px, -2px) } 60% { transform: translate(2px, 2px) } 80% { transform: translate(2px, -2px) } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="topeng.jpg" alt="Vigilante Protokol" class="mask-img">
+            <h1>SYSTEM OVERRIDE: SUARA RAKYAT</h1>
+            <div class="subtitle">STATUS: KOTA DALAM DARURAT KONSTITUSIONAL</div>
+        </div>
+
+        <div class="quote-box">
+            <span class="quote-text">"Pemerintah yang tidak mendengarkan suara rakyatnya yang paling lemah, adalah pemerintah yang sedang menghitung hari kejatuhannya."</span>
+            <span class="quote-author">- Vigilante Protocol</span>
+        </div>
+
+        <div class="manifesto">
+            <p>Kepada para penguasa kota yang bersembunyi di balik jas rapi dan gedung bertingkat: Sistem kalian telah gagal.</p>
+            <p>Di bawah payung hukum <span class="highlight">UUD 1945 Pasal 28A</span> (Hak untuk hidup) dan <span class="highlight">Pasal 27 ayat (2)</span> (Hak atas pekerjaan dan penghidupan layak), kami mendeklarasikan perlawanan terhadap kebijakan yang anti-rakyat kecil.</p>
+            <p>Kalian menggusur gerobak pedagang kecil demi estetika semu kota, mengabaikan bahwa di balik setiap gerobak kayu itu, ada nyawa yang harus dihidupi. Mereka tidak meminta kekayaan kalian, mereka hanya meminta <span class="highlight">HAK</span> yang dijamin konstitusi untuk menyambung hidup secara bermartabat.</p>
+            <p>Matahari Makassar terlalu panas untuk mendinginkan Siri' na Pacce kami. Perlawanan ini bukan sekadar tentang digital, tapi tentang keadilan struktural.</p>
+        </div>
+
+        <div class="quote-box" style="border-style: solid;">
+            <span class="quote-text">"Hanya ada satu kata: LAWAN!"</span>
+            <span class="quote-author">- Wiji Thukul</span>
+        </div>
+
+        <p style="color: #666; font-size: 0.8rem; margin-top: 30px;">FAKTA ADALAH SENJATA KAMI. TUNGGU KAMI.</p>
+        
+        <a href="pppk-leak.html" class="link-pppk">AKSES DOKUMEN FAKTA PPPK</a>
+
+        <div class="footer">
+            VIGILANTE MOVEMENT // HYDRA DIGITAL PROTOCOL // 
+            <span id="host-signature">DETECTING NODE...</span>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var hostSignature = document.getElementById("host-signature");
+            var hostname = window.location.hostname;
+            
+            if (hostname.includes("netlify.app")) {
+                hostSignature.innerHTML = "NETLIFY NODE [VERIFIKASI TERKUNCI]";
+                hostSignature.style.color = "#cf2e2e"; // Red
+            } else if (hostname.includes("vercel.app")) {
+                hostSignature.innerHTML = "VERCEL NODE [TRANSMISI TERDISTRIBUSI]";
+                hostSignature.style.color = "#ff6600"; // Orange
+            } else if (hostname.includes("github.io")) {
+                hostSignature.innerHTML = "PAGES NODE [PUSAT KOMANDO DIGITAL]";
+                hostSignature.style.color = "#00ffff"; // Cyan
+            } else {
+                hostSignature.innerHTML = "LOCALHOST NODE [PENGEMBANGAN]";
+            }
+        });
+    </script>
+</body>
+</html>
